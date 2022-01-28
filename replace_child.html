@@ -1,0 +1,15 @@
+<ul id="box">
+	<li>Hello</li>
+	<li>World</li>
+	<li>Wonder</li>
+</ul>
+
+<script>
+	let box=document.getElementById('box');
+	//let pos=box.firstElementChild.nextElementSibling;
+	let pos=box.firstElementChild;
+	
+	let li=document.createElement('li');
+	li.textContent="Welcome";
+	box.replaceChild(li,pos);
+</script>

@@ -1,0 +1,23 @@
+<a href="javascript:void(0)" onclick="opentab()" >Open Tab</a>
+<a href="javascript:void(0)" onclick="closetab()" >Close Tab</a>
+<script>
+	let op;
+	/*function opentab(){
+		let url="https://www.google.com";
+		let name="tab";
+		let options="width=400;height=400";
+		op=window.open(url,name,options);
+	}*/
+	function opentab(){
+		
+		let options="width=400;height=400;";
+		//op=window.open("","",options);
+		op=window.open("","_blank","");
+		op.document.write("Hello world");
+	}
+	
+	function closetab(){
+		op.close();
+	}
+	
+</script>

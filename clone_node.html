@@ -1,0 +1,13 @@
+<ul id="box">
+	<li>Hello</li>
+	<li>World</li>
+	<li>Wonder</li>
+</ul>
+
+<script>
+	let box=document.getElementById("box");
+	let cloneBox=box.cloneNode(true);
+	cloneBox.id="new_box";
+	cloneBox.className="box_class"
+	document.body.appendChild(cloneBox);
+</script>

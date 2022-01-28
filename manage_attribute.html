@@ -1,0 +1,22 @@
+<div id="name">zahid</div>
+<input type="button" onclick="setAddr()" value="set">
+<input type="button" onclick="removeAddr()" value="remove">
+<input type="button" onclick="getAddr()" value="get">
+<input type="button" onclick="hasAddr()" value="has">
+
+<script>
+function setAddr(){
+	let name=document.getElementById('name');
+	name.setAttribute("class","my_class");
+}
+
+function removeAddr(){
+	let name=document.getElementById('name');
+	name.removeAttribute("class","my_class");
+}
+
+function hasAddr(){
+	let name=document.getElementById('name');
+	console.log(name.hasAttribute("class","my_class"));
+}
+</script>

@@ -1,0 +1,55 @@
+<div id="count"></div>
+
+<script>
+	/*setInterval(test,1000);
+	
+	function test(){
+		console.log('hello');
+	}*/
+	
+	/*setInterval(test,1000);
+	let x=1;
+	
+	function test(){
+		console.log(x);
+		x++;
+	}*/
+	
+	/*let intcount=setInterval(test,100);
+	let x=1;
+	
+	function test(){
+	if(x==99){
+		clearInterval(intcount);
+	}
+		x++;
+		document.getElementById('count').innerHTML=x;
+	}*/
+	
+	
+	/*let x=10;
+	setInterval(test,1000);
+	function test(){
+		x=x+10;
+		let c=document.getElementById('count');		
+		c.style.width=x+ "px";
+	}*/
+	
+	setInterval(showclock,1000);
+	
+	function showclock() {
+		let d=new Date();
+		document.getElementById('count').innerHTML=d.toLocaleTimeString();
+	}
+	
+</script>
+
+<!--
+<style>
+	#count{
+	background-color:green;
+	width:50px;
+	height:500px;
+	}
+	
+</style>  -->

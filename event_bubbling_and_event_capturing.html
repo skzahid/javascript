@@ -1,0 +1,68 @@
+<head>
+	<style>
+		body{
+			background-color:black;
+		}
+		#div{
+			background-color:blue;
+			padding:50px;
+		}
+		#a{
+			color:white;
+		}
+	</style>
+</head>
+<body>
+	<div id="div">
+	<a href="javascript:void(0)" id="a">click</a>
+	</div>
+	<script>
+		/*
+			1.Child to Parent (bubbling)
+			2.Parent to child(capturing)
+			3.only click event
+		*/
+		
+		//child to parent 
+		/*document.getElementById('div').addEventListener("click",function(){
+			console.log("div click");
+		});
+		
+		document.getElementById('a').addEventListener("click",function(){
+			console.log("A click");
+		});
+		
+		document.addEventListener("click",function(){
+			console.log("Body click");
+		}); 
+		
+		//parent to child
+		document.getElementById('div').addEventListener("click",function(){
+			console.log("div click");
+		},true);
+		
+		document.getElementById('a').addEventListener("click",function(){
+			console.log("A click");
+		},true);
+		
+		document.addEventListener("click",function(){
+			console.log("Body click");
+		},true); */
+		
+		//click event
+		document.getElementById('div').addEventListener("click",function(){
+			console.log("div click");
+		});
+		
+		document.getElementById('a').addEventListener("click",function(e){
+			console.log("A click");
+			e.stopPropagation();
+		});
+		
+		document.addEventListener("click",function(){
+			console.log("Body click");
+		}); 
+		
+		
+	</script>
+</body>

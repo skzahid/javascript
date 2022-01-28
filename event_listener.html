@@ -1,0 +1,18 @@
+<input type="button" onclick="test()" id="btn" value="click here">
+
+<script>
+let btn=document.getElementById('btn');
+
+btn.addEventListener('click',test);
+btn.addEventListener('click',test1);
+
+
+	function test() {
+		console.log('test1');
+		btn.removeEventListener('click',test);
+	}
+	
+	function test1() {
+		console.log('test2');
+	}
+</script>

@@ -1,0 +1,15 @@
+<ul id="box">
+	<li>hello</li>
+	<li>world</li>
+</ul>
+<script>
+	let box=document.getElementById('box');
+	
+	let li=document.createElement('li');
+	li.textContent="Wonder";
+	
+	//let pos=box.firstElementChild;  //append the li at the top
+	let pos=box.firstElementChild.nextElementSibling;    //append the li to the next li sibling
+	
+	box.insertBefore(li,pos);
+</script>

@@ -1,0 +1,32 @@
+<form>
+		<input type="text" id="name" /> 
+		<!--<input type="search" id="name" /> -->
+</form>
+<div id="result"></div>
+<script>
+	let name=document.getElementById("name");
+	/*name.addEventListener('input',function(){
+		if(this.value==''){
+			document.getElementById("result").innerHTML=" ";
+		} else {
+			document.getElementById("result").innerHTML="Welcome "+ this.value;
+		}
+		
+	});*/
+	
+	/*name.addEventListener('focus',function(){
+		this.style.backgroundColor="red"
+	});
+	
+	name.addEventListener('blur',function(){
+		this.style.backgroundColor="white"
+	});*/
+	
+	/*name.addEventListener('search',function(){
+		alert('searching data '+this.value);
+	});*/
+	
+	name.addEventListener('change',function(){
+		console.log(this.value);
+	});
+</script>

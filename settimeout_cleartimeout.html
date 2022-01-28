@@ -1,0 +1,36 @@
+<form>
+	<input type="text" id="name"/>
+	<input type="button" onclick="submitdata()" value="click">
+</form>
+
+<div id="result"></div>
+
+<script>
+	/*setTimeout(test,3000);
+	function test() {
+		console.log('hello');
+	}*/
+	
+	/*function submitdata() {
+		let name=document.getElementById('name').value;
+		if(name==''){
+			document.getElementById('result').innerHTML='Please enter Name';
+			
+			setTimeout(clearform,5000);
+		}else {
+			document.getElementById('result').innerHTML='Hello '+name;
+		}
+		console.log(name);
+	}
+	
+	function clearform() {
+		document.getElementById('result').innerHTML=' ';
+		document.getElementById('name').value=' ';
+	}*/
+	
+	setTimeout(test,1000,"world","wonder");
+	
+	function test(fname,lname) {
+		console.log("Hello "+fname+" "+lname)
+	}
+</script>

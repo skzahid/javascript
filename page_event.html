@@ -1,0 +1,26 @@
+<!--
+<script>
+	/*
+		DOMContentLoaded
+		Load
+		beforeunload/unload
+	*/
+	window.addEventListener('DOMContentLoaded',function(){
+		console.log("DOMContentLoaded");
+	});
+	window.addEventListener('load',function(){
+		console.log("load");
+	});
+</script>
+<img src="https://sample-videos.com/img/Sample-jpg-image-2mb.jpg"/>
+<div>
+
+</div>
+-->
+<script>
+	window.onbeforeunload = function(){
+		return "hello";
+	};
+</script>
+<div>
+</div>
